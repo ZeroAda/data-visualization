@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -11,53 +12,47 @@ export default function Home() {
 
       <main>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          W(om)e(n) Matter
         </h1>
 
         <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
+          A perspective from a girl in STEM.
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a href="https://www.chenyi-li.com/female_work_life_balance_study/" className={styles.card}>
+            <h3> Research &rarr;</h3>
+            <p> Field Study on Female Family-Work Balance in Eastern China </p>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          <Link href="/visualization" className={styles.card}>
+            <h3> Visualization &rarr;</h3>
+            <p> Data visualization on gender equality around the world</p>
+          </Link>
+
+          <a
+            href="https://www.chenyi-li.com/object_analysis/"
+            className={styles.card}
+          >
+            <h3> Reflection &rarr;</h3>
+            <p> Changes of Ideal Body Shape and Gender Image </p>
           </a>
 
           <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
+            href="/proposal"
             className={styles.card}
           >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
+            <h3> Proposal &rarr;</h3>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              How to create technology to make the world a better place?
             </p>
           </a>
         </div>
       </main>
 
+
       <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-        </a>
+      <p>2024 &copy; Chenyi Li. All right reserved.</p>
       </footer>
 
       <style jsx>{`
