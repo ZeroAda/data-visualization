@@ -10,7 +10,7 @@ export default function Visualization() {
         <title>Proposal</title>
       </Head>
       <h1>Proposal</h1>
-      <p>My research plan</p>
+      <p>To be explored...</p>
     </Layout>
   );
 }

@@ -90,3 +90,44 @@
     flex-direction: column;
   }
 }
+
+.layoutWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.bgPosition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.contentWrapper {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+
+#blobSvg {
+  width: 100%;
+  height: 100%;
+}
+
+.subtitle {
+  font-size: 1.5rem; /* Adjust the subtitle size */
+  color: #666; /* Subtle color for subtitle */
+  margin-bottom: 40px; /* Space between subtitle and description */
+}
+
+.description {
+  max-width: 1200px; /* Limit width for readability */
+  margin: 0 auto 50px auto; /* Center align, and add space below */
+  line-height: 1.6; /* Improve readability */
+  text-align: justify; /* Justify the text for a clean block look */
+  font-size: 20px;
+}

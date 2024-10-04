@@ -16,8 +16,8 @@ export default function Visualization() {
   // Fetch data
   useEffect(() => {
     Promise.all([
-      d3.csv('/data/melted_new_data.csv'),
-      d3.csv('/data/percentage_data_new.csv'),
+      d3.csv('https://dl.dropboxusercontent.com/scl/fi/hdwykey6e64m2hjnzeww4/melted_new_data.csv?rlkey=m5zqhq3485dz3pict4sqgztw8&st=quinx5yz&dl=1'),
+      d3.csv('https://dl.dropboxusercontent.com/scl/fi/nn71xc8vmxrv8fe2gttrm/percentage_data_new.csv?rlkey=fx1c2rtu78oypfxnwmu6sefxu&st=u4kvfdym&dl=1'),
     ]).then(([meltedDataRaw, percentageDataRaw]) => {
       // Process meltedData
       const meltedDataProcessed = meltedDataRaw.map((d) => ({
@@ -534,7 +534,7 @@ export default function Visualization() {
         #map {
           flex: 2; /* Larger flex value to take up more space */
           min-width: 500px; /* Increase the minimum width for the map */
-          height: 450px; /* Increased height for better visibility */
+          height: 550px; /* Increased height for better visibility */
           padding: 20px;
           background-color: #fff;
           border-radius: 3px;
@@ -547,7 +547,7 @@ export default function Visualization() {
         #ringChart {
           flex: 1; /* Smaller flex value to take up less space */
           min-width: 300px;
-          height: 450px; /* Keep the height consistent */
+          height: 550px; /* Keep the height consistent */
           padding: 20px;
           background-color: #fff;
           border-radius: 3px;

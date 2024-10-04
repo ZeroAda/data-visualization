@@ -14,9 +14,12 @@ export default function Home() {
         <h1 className={styles.title}>
           W(om)e(n) Matter
         </h1>
+        <h2 className={styles.subtitle}>
+          A perspective from a researcher in STEM
+        </h2>
 
         <p className={styles.description}>
-          A perspective from a girl in STEM.
+          Welcome to W(om)e(n) Matter, a blog space where I explore the intersections of gender studies, technology, and society through my lens as a researcher in computational cognitive science, AI, and HCI. Here, I share insights into the role of women in balancing family and work, the evolving ideals of gender, and how we can leverage data and technology to create a more equitable world. Join me in the journey—all with the goal of fostering connection, understanding and positive change.
         </p>
 
         <div className={styles.grid}>
